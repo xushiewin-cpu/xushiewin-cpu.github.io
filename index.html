@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f8">
+  <meta name="description" content="The personal homepage of xushiewin-cpu.">
+  <title>Xushiewin — Personal Homepage</title>
+  <style>
+    :root { color-scheme: light; --ink:#18262c; --muted:#5f7076; --line:#dce4e6; --accent:#086a62; --paper:#f5f7f6; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .wrap { width:min(1080px, calc(100% - 40px)); margin:auto; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:26px 0; border-bottom:1px solid var(--line); }
+    .brand { font-weight:750; letter-spacing:.02em; }
+    nav { display:flex; gap:24px; font-size:.92rem; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    nav a { color:var(--muted); }
+    main { padding:clamp(64px, 12vw, 138px) 0 92px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.16em; font-size:.76rem; font-weight:700; }
+    h1 { margin:16px 0 8px; font-size:clamp(2.8rem, 8vw, 5.7rem); line-height:1.04; letter-spacing:-.055em; }
+    .subtitle { margin:18px 0 0; color:var(--muted); font-size:clamp(1.1rem, 2.6vw, 1.4rem); }
+    .intro { max-width:680px; margin-top:44px; padding-top:28px; border-top:1px solid var(--line); }
+    .intro h2 { margin:0 0 12px; font-size:1.05rem; letter-spacing:.02em; }
+    .intro p { margin:0 0 8px; color:var(--muted); }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .button { display:inline-flex; align-items:center; min-height:46px; padding:0 18px; border:1px solid var(--accent); border-radius:4px; font-weight:650; }
+    .button.primary { background:var(--accent); color:white; }
+    .button.secondary { color:var(--accent); }
+    footer { border-top:1px solid var(--line); padding:22px 0 32px; color:var(--muted); font-size:.88rem; }
+    @media (max-width:560px) { .wrap { width:min(100% - 32px,1080px); } header { align-items:flex-start; gap:14px; flex-direction:column; } nav { gap:18px; } main { padding-top:68px; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#home" aria-label="Xushiewin home">XUSHIEWIN</a>
+      <nav aria-label="Main navigation"><a href="#about">About / 关于</a><a href="https://github.com/xushiewin-cpu" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+    </header>
+    <main id="home">
+      <div class="eyebrow">Personal Homepage · 个人主页</div>
+      <h1>Xushiewin</h1>
+      <p class="subtitle">A place to connect and explore.<br>在这里认识我，并了解我的公开作品。</p>
+      <section class="intro" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About / 关于</h2>
+        <p>Welcome. This is my personal homepage. Visit my GitHub profile to see the public projects and work I choose to share.</p>
+        <p>欢迎来到我的个人主页。你可以访问我的 GitHub 主页，查看我选择公开分享的项目与作品。</p>
+        <div class="actions"><a class="button primary" href="https://github.com/xushiewin-cpu" target="_blank" rel="noopener noreferrer">View GitHub Profile ↗</a><a class="button secondary" href="https://github.com/xushiewin-cpu" target="_blank" rel="noopener noreferrer">访问 GitHub 主页 ↗</a></div>
+      </section>
+    </main>
+    <footer>© <span id="year">2026</span> Xushiewin · <a href="https://github.com/xushiewin-cpu">GitHub</a></footer>
+  </div>
+</body>
+</html>
+
